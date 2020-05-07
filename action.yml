@@ -18,6 +18,9 @@ inputs:
     default: 'master'
   token:
     required: true
+  draft:
+    required: false
+    default: false
 runs:
   using: 'node12'
   main: 'index.js'
