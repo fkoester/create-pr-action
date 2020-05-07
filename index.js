@@ -53,7 +53,7 @@ async function main() {
       bodyTemplate,
       title,
       body,
-    }, null)
+    }, null))
 
     const {
       data: { html_url }
