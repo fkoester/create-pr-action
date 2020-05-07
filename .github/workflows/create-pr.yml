@@ -1,0 +1,17 @@
+on: [push]
+
+jobs:
+  create_pr:
+    runs-on: ubuntu-latest
+    name: Create PR
+    steps:
+      # To use this repository's private action, you must check out the repository
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Create PR step
+        uses: ./ # Uses an action in the root directory
+        with:
+          prefix: 'mac-'
+          ticketRegex: mac\-([0-9]+)\-.*
+          ticketUrlTemplate: 'https://machtfit.atlassian.net/browse/MAC-{ticketNum}'
+          testUrlTemplate: 'https://machtfit.{branch}.machtfittest.de/'
