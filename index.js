@@ -48,10 +48,12 @@ async function main() {
       .replace('{ticketUrl}', ticketUrl)
       .replace('{testUrl}', testUrl))
 
-    core.info({
+    core.info(JSON.stringify({
+      titleTemplate,
+      bodyTemplate,
       title,
       body,
-    })
+    }, null)
 
     const {
       data: { html_url }
