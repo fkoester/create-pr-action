@@ -17,5 +17,5 @@ jobs:
           test-url-template: 'https://machtfit.{branch}.machtfittest.de/'
           title-template: 'MAC-{ticketNum}'
           title-body: 'Testsystem: {testUrl}\n{ticketUrl}'
-          base-branch: 'master'
+          base-branch: 'develop'
           token: ${{ secrets.GITHUB_TOKEN }}
