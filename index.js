@@ -12,6 +12,7 @@ async function main() {
     const bodyTemplate = core.getInput('body-template')
     const baseBranch = core.getInput('base-branch')
     const token = core.getInput('token')
+    const draft = core.getInput('draft')
 
     const ref = github.context.payload.ref
     const branch = ref.substring(ref.lastIndexOf('/') + 1)
@@ -65,6 +66,7 @@ async function main() {
       body,
       head: branch,
       base: baseBranch
+      draft,
     })
 
     core.info(`Pull request created: ${html_url}`);

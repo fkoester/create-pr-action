@@ -16,6 +16,7 @@ jobs:
           ticket-url-template: 'https://machtfit.atlassian.net/browse/MAC-{ticketNum}'
           test-url-template: 'https://machtfit.{branch}.machtfittest.de/'
           title-template: 'MAC-{ticketNum}'
-          body-template: 'Testsystem: {testUrl}\n{ticketUrl}'
+          body-template: '[Testsystem]({testUrl})\r\n[MAC-{ticketNum}]({ticketUrl})'
           base-branch: 'develop'
           token: ${{ secrets.GITHUB_TOKEN }}
+          draft: true
