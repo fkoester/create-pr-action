@@ -1,0 +1,23 @@
+name: 'Create PR'
+description: 'Create a PR with links to ticket and test system'
+inputs:
+  prefix:
+    required: true
+  ticket-regex:
+    required: true
+  ticket-url-template:
+    required: true
+  test-url-template:
+    required: true
+  title-template:
+    required: true
+  body-template:
+    required: true
+  base-branch:
+    required: true
+    default: 'master'
+  token:
+    required: true
+runs:
+  using: 'node12'
+  main: 'index.js'

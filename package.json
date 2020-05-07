@@ -1,0 +1,25 @@
+{
+  "name": "create-pr-action",
+  "version": "1.0.0",
+  "description": "GitHub action to create new PRs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fkoester/create-pr-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fkoester/create-pr-action/issues"
+  },
+  "homepage": "https://github.com/fkoester/create-pr-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/github": "^2.1.1",
+    "@octokit/request": "^5.4.2"
+  }
+}
