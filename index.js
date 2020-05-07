@@ -65,7 +65,7 @@ async function main() {
       title,
       body,
       head: branch,
-      base: baseBranch
+      base: baseBranch,
       draft,
     })
 
